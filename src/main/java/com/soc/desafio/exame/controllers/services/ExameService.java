@@ -27,12 +27,28 @@ public class ExameService {
 		return obj.get();
 	}
 	
-	//Metodo que retorna o exame salvo
+	//Metodo que retorna o exame salvo - insere do BD um novo objeto exame
 	public Exame insert(Exame obj) {
 		return repository.save(obj);
 		
 	}
 	
+	public Exame delete(Long id) {
+		try {
+			repository.deleteById(id);
+		} catch (RuntimeException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+	public Exame update(Long id, Exame obj) {
+		Exame entity = repository.getOne(id);
+		//updateData(entity, obj);
+		return repository.save(entity);
+		
+	}
+
 	
 	
 
