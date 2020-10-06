@@ -2,12 +2,14 @@ package com.soc.desafio.exame.models.entities;
 
 import java.util.Date;
 
+import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
+@Entity
 public class Exame extends AbstractEntity {
 	
 	private static final long serialVersionUID = 1L;
@@ -20,8 +22,11 @@ public class Exame extends AbstractEntity {
 	private Double ValorExame;
 	
 	public Exame() {
-		super();
 	}
+
+	public Exame(Long id) {
+    	setId(id);
+    }
 
 	public Exame(String nmExame, String descricao, String dataExame, Double valorExame) {
 		super();
@@ -31,7 +36,6 @@ public class Exame extends AbstractEntity {
 		ValorExame = valorExame;
 	}
 
-	
 	public String getNmExame() {
 		return nmExame;
 	}

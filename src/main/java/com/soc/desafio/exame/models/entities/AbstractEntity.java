@@ -12,8 +12,15 @@ public abstract class AbstractEntity implements Serializable{
 	
 	private static final long serialVersionUID = 1L;
 	@Id
+	//dependendo do BD vai mudar: GenerationType.IDENTITY
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
+	
+	
+	public AbstractEntity() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 
 	public Long getId() {
 		return id;
