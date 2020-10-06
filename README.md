@@ -31,7 +31,7 @@
 - Postgree <br />
 
 ## PaaS <br />
-- Plataforma de Serviço - Web Clound: Heroku <br />
+- Plataforma de Serviço - Web Cloud: Heroku <br />
 
 :woman_technologist:
 ------------------
