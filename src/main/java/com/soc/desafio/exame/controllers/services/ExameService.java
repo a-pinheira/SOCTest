@@ -17,6 +17,7 @@ public class ExameService {
 	@Autowired
 	private ExameRepository repository;
 	
+	//Busca/recupera todos
 	public List<Exame> findAll(){
 		return repository.findAll();
 	}
@@ -24,9 +25,13 @@ public class ExameService {
 	public Exame findById(Long id) {
 		Optional<Exame> obj = repository.findById(id);
 		return obj.get();
-		
 	}
 	
+	//Metodo que retorna o exame salvo
+	public Exame insert(Exame obj) {
+		return repository.save(obj);
+		
+	}
 	
 	
 	
