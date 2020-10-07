@@ -23,12 +23,13 @@
 ## IDE:<br />
 - Eclipse 2019-12 (STS - Spring Tools Suite 4.4.6.1) <br />
 
-## Perfil de Ambiente de Desenvolvimento <br />
+## Perfil de Implementação do WebService <br />
 - Ambiente de Teste: application-test.properties <br />
+- Ambiente de Desenvolvimento: application-dev.properties <br />
 
 ## Banco de Dados <br />
 - H2  <br />
-- Postgree <br />
+- Postgres <br />
 
 ## PaaS <br />
 - Plataforma de Serviço - Web Cloud: Heroku <br />
