@@ -1,4 +1,4 @@
-package com.soc.desafio.exame.models.entities;
+package com.soc.exame.models.entities;
 
 import java.io.Serializable;
 

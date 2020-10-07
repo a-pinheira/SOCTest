@@ -1,10 +1,11 @@
-package com.soc.desafio.exame.controllers.resources;
+package com.soc.exame.controllers.resources;
 
 import java.net.URI;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -14,8 +15,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import com.soc.desafio.exame.controllers.services.ExameService;
-import com.soc.desafio.exame.models.entities.Exame;
+import com.soc.exame.controllers.services.ExameService;
+import com.soc.exame.models.entities.Exame;
 
 
 @RestController
@@ -24,6 +25,7 @@ import com.soc.desafio.exame.models.entities.Exame;
 public class ExameResource {
 	
 	@Autowired
+	 //dependencia para o service
 	private ExameService service;
 	
 	//método que será o endpoint para acessar os exames
@@ -36,6 +38,7 @@ public class ExameResource {
 		}
 	
 	@GetMapping(value = "/{id}")
+	//@PathVariable: para o spring considerar o ID como parametro que chegará na URL
 	public ResponseEntity<Exame> findById(@PathVariable Long id){
 		Exame obj = service.findById(id);
 		return ResponseEntity.ok().body(obj);		
@@ -49,6 +52,21 @@ public class ExameResource {
 				.buildAndExpand(obj.getId()).toUri();
 		//return ResponseEntity.ok().body(obj);
 		return ResponseEntity.created(uri).body(obj);
+	}
+	
+	//endpoint para deleção de exame
+	@DeleteMapping(value = "/{id}")
+	public ResponseEntity<Void> delete(@PathVariable Long id) {
+		service.delete(id);
+		//ja trata qnd não tiver conteúdo
+		return ResponseEntity.noContent().build();
+	}
+	
+	//endpoint de atualização
+	@PutMapping(value = "/{id}")
+	public ResponseEntity<Exame> update(@PathVariable Long id, @RequestBody Exame obj) {
+		obj = service.update(id, obj);
+		return ResponseEntity.ok().body(obj);
 	}
 	
  
