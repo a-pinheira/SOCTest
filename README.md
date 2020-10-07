@@ -23,7 +23,7 @@
 ## IDE:<br />
 - Eclipse 2019-12 (STS - Spring Tools Suite 4.4.6.1) <br />
 
-## Perfil de Implementação do WebService <br />
+## Perfis de Implementação do WebService <br />
 - Ambiente de Teste: application-test.properties <br />
 - Ambiente de Desenvolvimento: application-dev.properties <br />
 
