@@ -44,7 +44,7 @@ http://localhost:8080/h2-console <br />
 
 -----------------
 > Executar no Postman <br />
-Teste: http://localhost:8080/exames
-Desenvolvimento: atualizações do BD direto no postgreSQL, no qual foram efetuadas todas as transações via postman.
-Implementação: https://soc-exames.herokuapp.com/exames
+Teste: http://localhost:8080/exames <br />
+Desenvolvimento: atualizações do BD direto no postgreSQL, no qual foram efetuadas todas as transações via postman. <br />
+Implementação: https://soc-exames.herokuapp.com/exames <br />
 
