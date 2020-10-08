@@ -5,6 +5,7 @@
 </div>
 
 - Backend: API Rest - CRUD completo + Heroku <br/>
+Requisições via Postman <br/>
 <a href="https://github.com/monymachado/SOCTest/tree/featureT" target="_blank">:link:  Link da Branch Completa</a> :ballot_box_with_check:  <br/> 
 
 - Frontend: WebService + Heroku  <br/>
