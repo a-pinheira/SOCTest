@@ -35,7 +35,7 @@
 - Plataforma de Serviço - Web Cloud: Heroku <br />
 
 ## Links <br />
-https://soc-exames.herokuapp.com/ <br />
+https://soc-exames.herokuapp.com/exames <br />
 
 :woman_technologist:
 ------------------
