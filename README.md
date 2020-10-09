@@ -8,7 +8,7 @@
 Requisições via Postman <br/>
 <a href="https://github.com/monymachado/SOCTest/tree/featureT" target="_blank">:link:  Link da Branch Completa</a> :ballot_box_with_check:  <br/> 
 
-- Frontend: WebService + Heroku  <br/>
+- Frontend: API Rest sendo consumido por um WebService + Heroku  <br/>
 :link: Em andamento :construction: <br/>
 
 -------------------------
